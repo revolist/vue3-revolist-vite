@@ -5,7 +5,6 @@
 
 <script>
 import { defineComponent } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
 import VGrid from "@revolist/vue3-datagrid";
 export default defineComponent({
   name: "App",
@@ -21,8 +20,12 @@ export default defineComponent({
     };
   },
   components: {
-    HelloWorld,
     VGrid
   }
 });
 </script>
+<style>
+  revo-grid {
+    height: 500px;
+  }
+</style>
